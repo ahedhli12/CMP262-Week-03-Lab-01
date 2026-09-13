@@ -7,7 +7,7 @@
 
 ## Purpose
 
-This lab gives you hands-on practice with Python **lists** and **tuples**. You will create collections, access and modify values, use common methods and functions, loop through collections, work with slices, and compare mutable and immutable data structures.
+This lab gives you practice working with Python **lists** and **tuples**. You will create collections, access values, modify lists, use common functions, loop through lists, and compare mutable and immutable data structures.
 
 Complete all work in the Jupyter Notebook provided in this repository:
 
@@ -17,104 +17,78 @@ Add a **Markdown heading before each part** and complete each requirement in you
 
 ---
 
-## Part 1 – Creating Lists and Accessing Values
+## Part 1 – Creating and Accessing a List
 
-Create a list named `courses` that contains at least **six course names**.
+Create a list named `courses` containing at least **five course names**.
 
 Display:
 
 - The entire list
-- The first item
-- The third item
-- The last item using negative indexing
-- The second-to-last item using negative indexing
-- The number of items using `len()`
+- The first course
+- The third course
+- The last course
+- The number of courses using `len()`
 
-Then use list slicing to display:
-
-- The first three items
-- Items from index 2 through index 4
-- The last three items
+Then display the **first three courses** using slicing.
 
 **Points: 15**
 
 ---
 
-## Part 2 – Modifying Lists and List Methods
+## Part 2 – Modifying a List
 
-Create a list named `favorite_foods` containing at least **five foods**.
+Create a list named `favorite_foods` containing at least **four foods**.
 
-Complete all of the following:
+Complete the following:
 
 1. Display the original list.
-2. Change one existing item using its index.
-3. Add one item using `append()`.
-4. Add one item at a specific position using `insert()`.
-5. Remove one item using `remove()`.
-6. Remove one item using `pop()` and display the removed value.
-7. Display the number of times one selected item appears using `count()`.
-8. Display the index of one selected item using `index()`.
-9. Display the final list.
+2. Change one food using its index.
+3. Add a new food using `append()`.
+4. Remove one food using `remove()`.
+5. Display the updated list.
 
 **Points: 15**
 
 ---
 
-## Part 3 – Sorting, Reversing, and Membership
+## Part 3 – Working with Numbers
 
-Create a list named `cities` containing at least **six city names**.
-
-Complete the following:
-
-- Display the original list.
-- Sort the list alphabetically using `sort()` and display it.
-- Reverse the list using `reverse()` and display it.
-- Use the `in` operator to check whether one city is in the list.
-- Use the `not in` operator to check whether another city is not in the list.
-
-Write a short Markdown sentence explaining what the `in` operator does.
-
-**Points: 10**
-
----
-
-## Part 4 – Numeric Lists and Built-In Functions
-
-Create a list named `scores` containing at least **eight numeric values**.
+Create a list named `scores` containing at least **six numbers**.
 
 Display:
 
 - The entire list
-- The highest value using `max()`
-- The lowest value using `min()`
+- The highest score using `max()`
+- The lowest score using `min()`
 - The total using `sum()`
-- The number of values using `len()`
-- The average using `sum(scores) / len(scores)`
+- The number of scores using `len()`
+- The average score
 
-Then add one new score and display the new average.
+Use the following calculation for the average:
+
+`sum(scores) / len(scores)`
+
+**Points: 20**
+
+---
+
+## Part 4 – Looping Through a List
+
+Create a list named `cities` containing at least **five cities**.
+
+Use a `for` loop to display each city on a separate line.
+
+Then use another `for` loop to display a message for each city in this format:
+
+`I would like to visit CITY.`
+
+Replace `CITY` with the city from the list.
 
 **Points: 15**
 
 ---
 
-## Part 5 – Looping Through Lists
-
-Create a list named `programming_languages` containing at least **five programming languages**.
-
-Complete the following:
-
-1. Use a `for` loop to display every language on a separate line.
-2. Use a second `for` loop to display a short message containing each language.
-3. Create a numeric list containing at least six numbers.
-4. Use a loop to display only the values that are greater than a number you choose.
-
-Do not manually print each individual list item.
-
-**Points: 15**
-
----
-
-## Part 6 – Creating and Accessing Tuples
+## Part 5 – Tuples
 
 Create a tuple named `student_record` containing:
 
@@ -126,68 +100,58 @@ Create a tuple named `student_record` containing:
 Display:
 
 - The entire tuple
-- The first value
-- The major
-- The last value using negative indexing
+- The student's name
+- The student's major
+- The graduation year
+- The GPA
 - The number of values using `len()`
-- A slice containing the first two values
 
-Then use the `in` operator to check whether the student's major appears in the tuple.
+Then answer the following question in a **Markdown cell**:
 
-**Points: 10**
+**Why can you change values in a list but not in a tuple?**
 
----
-
-## Part 7 – Tuple Packing and Unpacking
-
-Create a tuple named `location` containing three values:
-
-- City
-- State
-- ZIP code
-
-Unpack the tuple into three separate variables.
-
-Display each variable separately.
-
-Then create another tuple with at least four values and unpack it into four variables.
-
-**Points: 10**
+**Points: 15**
 
 ---
 
-## Part 8 – Converting Between Lists and Tuples
+## Part 6 – Lists vs. Tuples
 
-Create a list containing at least four values.
-
-Complete the following:
-
-1. Convert the list to a tuple using `tuple()`.
-2. Display the tuple.
-3. Convert the tuple back to a list using `list()`.
-4. Display the new list.
-5. Modify the new list to demonstrate that lists are mutable.
-
-**Points: 5**
-
----
-
-## Part 9 – Lists vs. Tuples Review
-
-In a **Markdown cell**, answer each question in your own words.
+In a **Markdown cell**, answer the following questions in your own words:
 
 1. What is a list?
 2. What is a tuple?
-3. What is one similarity between lists and tuples?
-4. What is the main difference between a list and a tuple?
+3. What is one similarity between a list and a tuple?
+4. What is the main difference between them?
 5. What does **mutable** mean?
-6. What does **immutable** mean?
-7. Which data structure is mutable?
-8. Which data structure is immutable?
-9. Why might a programmer choose a tuple instead of a list?
-10. Give one real-world example where a list would make sense and one where a tuple would make sense.
+6. Which is mutable: a list or a tuple?
 
-**Points: 5**
+**Points: 10**
+
+---
+
+## Part 7 – Challenge: Student Scores
+
+Use the following list:
+
+```python
+student_scores = [78, 92, 85, 67, 95, 88, 73]
+```
+
+Write Python code that:
+
+1. Displays the highest score.
+2. Displays the lowest score.
+3. Calculates and displays the average score.
+4. Uses a `for` loop to display only scores that are **80 or higher**.
+5. Counts how many scores are **80 or higher**.
+
+### Challenge Rule
+
+Try to solve this part using the concepts covered in class.
+
+Do not manually print individual scores.
+
+**Points: 10**
 
 ---
 
@@ -220,13 +184,11 @@ Submit the link to **your own completed GitHub repository** through Blackboard U
 
 | Section | Points |
 |---|---:|
-| Creating Lists and Accessing Values | 15 |
-| Modifying Lists and List Methods | 15 |
-| Sorting, Reversing, and Membership | 10 |
-| Numeric Lists and Built-In Functions | 15 |
-| Looping Through Lists | 15 |
-| Creating and Accessing Tuples | 10 |
-| Tuple Packing and Unpacking | 10 |
-| Converting Lists and Tuples | 5 |
-| Lists vs. Tuples Review | 5 |
+| Creating and Accessing a List | 15 |
+| Modifying a List | 15 |
+| Working with Numbers | 20 |
+| Looping Through a List | 15 |
+| Tuples | 15 |
+| Lists vs. Tuples | 10 |
+| Challenge: Student Scores | 10 |
 | **Total** | **100** |
